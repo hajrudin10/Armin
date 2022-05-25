@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "adder_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fdiv",
+					"strict" : false
+				},
+				{
+					"name" : "fref",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

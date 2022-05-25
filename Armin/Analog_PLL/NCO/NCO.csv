@@ -1,0 +1,40 @@
+# system info NCO on 2022.04.06.16:03:42
+system_info:
+name,value
+DEVICE,EP4CE22F17C6
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1649253821
+#
+#
+# Files generated for NCO on 2022.04.06.16:03:42
+files:
+filepath,kind,attributes,module,is_top
+simulation/NCO.v,VERILOG,,NCO,true
+simulation/submodules/mentor/asj_nco_mob_rw.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_mob_rw.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_isdr.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_isdr.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_dxx_g.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_dxx_g.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_dxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_dxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_gal.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_gal.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_as_m_cen.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_as_m_cen.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/mentor/asj_altqmcpipe.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/aldec/asj_altqmcpipe.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,NCO_nco_ii_0,false
+simulation/submodules/NCO_nco_ii_0_sin.hex,HEX,,NCO_nco_ii_0,false
+simulation/submodules/NCO_nco_ii_0_cos.hex,HEX,,NCO_nco_ii_0,false
+simulation/submodules/NCO_nco_ii_0.v,VERILOG,,NCO_nco_ii_0,false
+simulation/submodules/NCO_nco_ii_0_tb.vhd,OTHER,,NCO_nco_ii_0,false
+simulation/submodules/c_model/model_wrapper.cpp,OTHER,,NCO_nco_ii_0,false
+simulation/submodules/c_model/nco_model.cpp,OTHER,,NCO_nco_ii_0,false
+simulation/submodules/c_model/nco_model.h,OTHER,,NCO_nco_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+NCO.nco_ii_0,NCO_nco_ii_0

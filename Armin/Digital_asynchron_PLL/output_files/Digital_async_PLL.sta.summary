@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Recovery 'fdiv'
+Slack : -0.948
+TNS   : -0.948
+
+Type  : Slow 1200mV 85C Model Recovery 'fref'
+Slack : -0.724
+TNS   : -0.724
+
+Type  : Slow 1200mV 85C Model Removal 'fref'
+Slack : 0.976
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'fdiv'
+Slack : 1.200
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fdiv'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fref'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Recovery 'fdiv'
+Slack : -0.763
+TNS   : -0.763
+
+Type  : Slow 1200mV 0C Model Recovery 'fref'
+Slack : -0.549
+TNS   : -0.549
+
+Type  : Slow 1200mV 0C Model Removal 'fref'
+Slack : 0.865
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'fdiv'
+Slack : 1.079
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fdiv'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fref'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Recovery 'fdiv'
+Slack : -0.093
+TNS   : -0.093
+
+Type  : Fast 1200mV 0C Model Recovery 'fref'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'fref'
+Slack : 0.524
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'fdiv'
+Slack : 0.659
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fref'
+Slack : -3.000
+TNS   : -4.095
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fdiv'
+Slack : -3.000
+TNS   : -4.093
+
+------------------------------------------------------------

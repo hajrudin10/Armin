@@ -1,0 +1,484 @@
+// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition"
+
+// DATE "05/03/2022 09:51:50"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for QuestaSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Lock_in (
+	CLOCK_50,
+	RESET,
+	ADC_in,
+	sine_out);
+input 	CLOCK_50;
+input 	RESET;
+input 	[15:0] ADC_in;
+output 	[9:0] sine_out;
+
+// Design Ports Information
+// CLOCK_50	=>  Location: PIN_R8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RESET	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[0]	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[1]	=>  Location: PIN_D16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[2]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[3]	=>  Location: PIN_P14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[4]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[5]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[6]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[7]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[8]	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[9]	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[10]	=>  Location: PIN_F9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[11]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[12]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[13]	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[14]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ADC_in[15]	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[0]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[1]	=>  Location: PIN_G5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[2]	=>  Location: PIN_L16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[3]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[4]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[5]	=>  Location: PIN_D5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[6]	=>  Location: PIN_M10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[7]	=>  Location: PIN_P9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[8]	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sine_out[9]	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \CLOCK_50~input_o ;
+wire \RESET~input_o ;
+wire \ADC_in[0]~input_o ;
+wire \ADC_in[1]~input_o ;
+wire \ADC_in[2]~input_o ;
+wire \ADC_in[3]~input_o ;
+wire \ADC_in[4]~input_o ;
+wire \ADC_in[5]~input_o ;
+wire \ADC_in[6]~input_o ;
+wire \ADC_in[7]~input_o ;
+wire \ADC_in[8]~input_o ;
+wire \ADC_in[9]~input_o ;
+wire \ADC_in[10]~input_o ;
+wire \ADC_in[11]~input_o ;
+wire \ADC_in[12]~input_o ;
+wire \ADC_in[13]~input_o ;
+wire \ADC_in[14]~input_o ;
+wire \ADC_in[15]~input_o ;
+wire \sine_out[0]~output_o ;
+wire \sine_out[1]~output_o ;
+wire \sine_out[2]~output_o ;
+wire \sine_out[3]~output_o ;
+wire \sine_out[4]~output_o ;
+wire \sine_out[5]~output_o ;
+wire \sine_out[6]~output_o ;
+wire \sine_out[7]~output_o ;
+wire \sine_out[8]~output_o ;
+wire \sine_out[9]~output_o ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X31_Y34_N9
+cycloneive_io_obuf \sine_out[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[0]~output .bus_hold = "false";
+defparam \sine_out[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y24_N16
+cycloneive_io_obuf \sine_out[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[1]~output .bus_hold = "false";
+defparam \sine_out[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y11_N9
+cycloneive_io_obuf \sine_out[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[2]~output .bus_hold = "false";
+defparam \sine_out[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y34_N23
+cycloneive_io_obuf \sine_out[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[3]~output .bus_hold = "false";
+defparam \sine_out[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y34_N16
+cycloneive_io_obuf \sine_out[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[4]~output .bus_hold = "false";
+defparam \sine_out[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y34_N16
+cycloneive_io_obuf \sine_out[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[5]~output .bus_hold = "false";
+defparam \sine_out[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y0_N23
+cycloneive_io_obuf \sine_out[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[6]~output .bus_hold = "false";
+defparam \sine_out[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X38_Y0_N9
+cycloneive_io_obuf \sine_out[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[7]~output .bus_hold = "false";
+defparam \sine_out[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y34_N9
+cycloneive_io_obuf \sine_out[8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[8]~output .bus_hold = "false";
+defparam \sine_out[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y0_N16
+cycloneive_io_obuf \sine_out[9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sine_out[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sine_out[9]~output .bus_hold = "false";
+defparam \sine_out[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X27_Y0_N22
+cycloneive_io_ibuf \CLOCK_50~input (
+	.i(CLOCK_50),
+	.ibar(gnd),
+	.o(\CLOCK_50~input_o ));
+// synopsys translate_off
+defparam \CLOCK_50~input .bus_hold = "false";
+defparam \CLOCK_50~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X31_Y34_N1
+cycloneive_io_ibuf \RESET~input (
+	.i(RESET),
+	.ibar(gnd),
+	.o(\RESET~input_o ));
+// synopsys translate_off
+defparam \RESET~input .bus_hold = "false";
+defparam \RESET~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N22
+cycloneive_io_ibuf \ADC_in[0]~input (
+	.i(ADC_in[0]),
+	.ibar(gnd),
+	.o(\ADC_in[0]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[0]~input .bus_hold = "false";
+defparam \ADC_in[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y25_N1
+cycloneive_io_ibuf \ADC_in[1]~input (
+	.i(ADC_in[1]),
+	.ibar(gnd),
+	.o(\ADC_in[1]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[1]~input .bus_hold = "false";
+defparam \ADC_in[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X20_Y34_N22
+cycloneive_io_ibuf \ADC_in[2]~input (
+	.i(ADC_in[2]),
+	.ibar(gnd),
+	.o(\ADC_in[2]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[2]~input .bus_hold = "false";
+defparam \ADC_in[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X49_Y0_N8
+cycloneive_io_ibuf \ADC_in[3]~input (
+	.i(ADC_in[3]),
+	.ibar(gnd),
+	.o(\ADC_in[3]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[3]~input .bus_hold = "false";
+defparam \ADC_in[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X45_Y34_N8
+cycloneive_io_ibuf \ADC_in[4]~input (
+	.i(ADC_in[4]),
+	.ibar(gnd),
+	.o(\ADC_in[4]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[4]~input .bus_hold = "false";
+defparam \ADC_in[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X49_Y34_N1
+cycloneive_io_ibuf \ADC_in[5]~input (
+	.i(ADC_in[5]),
+	.ibar(gnd),
+	.o(\ADC_in[5]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[5]~input .bus_hold = "false";
+defparam \ADC_in[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y34_N8
+cycloneive_io_ibuf \ADC_in[6]~input (
+	.i(ADC_in[6]),
+	.ibar(gnd),
+	.o(\ADC_in[6]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[6]~input .bus_hold = "false";
+defparam \ADC_in[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X40_Y34_N1
+cycloneive_io_ibuf \ADC_in[7]~input (
+	.i(ADC_in[7]),
+	.ibar(gnd),
+	.o(\ADC_in[7]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[7]~input .bus_hold = "false";
+defparam \ADC_in[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X45_Y0_N15
+cycloneive_io_ibuf \ADC_in[8]~input (
+	.i(ADC_in[8]),
+	.ibar(gnd),
+	.o(\ADC_in[8]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[8]~input .bus_hold = "false";
+defparam \ADC_in[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N1
+cycloneive_io_ibuf \ADC_in[9]~input (
+	.i(ADC_in[9]),
+	.ibar(gnd),
+	.o(\ADC_in[9]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[9]~input .bus_hold = "false";
+defparam \ADC_in[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y34_N1
+cycloneive_io_ibuf \ADC_in[10]~input (
+	.i(ADC_in[10]),
+	.ibar(gnd),
+	.o(\ADC_in[10]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[10]~input .bus_hold = "false";
+defparam \ADC_in[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X29_Y34_N15
+cycloneive_io_ibuf \ADC_in[11]~input (
+	.i(ADC_in[11]),
+	.ibar(gnd),
+	.o(\ADC_in[11]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[11]~input .bus_hold = "false";
+defparam \ADC_in[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y34_N1
+cycloneive_io_ibuf \ADC_in[12]~input (
+	.i(ADC_in[12]),
+	.ibar(gnd),
+	.o(\ADC_in[12]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[12]~input .bus_hold = "false";
+defparam \ADC_in[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X36_Y0_N8
+cycloneive_io_ibuf \ADC_in[13]~input (
+	.i(ADC_in[13]),
+	.ibar(gnd),
+	.o(\ADC_in[13]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[13]~input .bus_hold = "false";
+defparam \ADC_in[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y34_N1
+cycloneive_io_ibuf \ADC_in[14]~input (
+	.i(ADC_in[14]),
+	.ibar(gnd),
+	.o(\ADC_in[14]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[14]~input .bus_hold = "false";
+defparam \ADC_in[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y17_N22
+cycloneive_io_ibuf \ADC_in[15]~input (
+	.i(ADC_in[15]),
+	.ibar(gnd),
+	.o(\ADC_in[15]~input_o ));
+// synopsys translate_off
+defparam \ADC_in[15]~input .bus_hold = "false";
+defparam \ADC_in[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign sine_out[0] = \sine_out[0]~output_o ;
+
+assign sine_out[1] = \sine_out[1]~output_o ;
+
+assign sine_out[2] = \sine_out[2]~output_o ;
+
+assign sine_out[3] = \sine_out[3]~output_o ;
+
+assign sine_out[4] = \sine_out[4]~output_o ;
+
+assign sine_out[5] = \sine_out[5]~output_o ;
+
+assign sine_out[6] = \sine_out[6]~output_o ;
+
+assign sine_out[7] = \sine_out[7]~output_o ;
+
+assign sine_out[8] = \sine_out[8]~output_o ;
+
+assign sine_out[9] = \sine_out[9]~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

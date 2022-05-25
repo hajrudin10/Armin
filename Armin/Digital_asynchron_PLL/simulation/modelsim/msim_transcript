@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do Digital_async_PLL_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Besic/OneDrive\ -\ TU\ Wien/Bachelorstudents/Armin/Digital_asynchron_PLL {C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:21:03 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL" C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v 
+# -- Compiling module Digital_async_PLL
+# 
+# Top level modules:
+# 	Digital_async_PLL
+# End time: 11:21:03 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Besic/OneDrive\ -\ TU\ Wien/Bachelorstudents/Armin/Digital_asynchron_PLL {C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:21:03 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL" C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v 
+# -- Compiling module adder2bit
+# 
+# Top level modules:
+# 	adder2bit
+# End time: 11:21:04 on Oct 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Besic/OneDrive\ -\ TU\ Wien/Bachelorstudents/Armin/Digital_asynchron_PLL {C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:21:04 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL" C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v 
+# -- Compiling module Digital_async_PLL_vlg_tst
+# 
+# Top level modules:
+# 	Digital_async_PLL_vlg_tst
+# End time: 11:21:04 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  PLL_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" PLL_tb 
+# Start time: 11:21:04 on Oct 27,2021
+# ** Error: (vsim-3170) Could not find 'PLL_tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/simulation/modelsim/rtl_work
+#             C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Digital_async_PLL_run_msim_rtl_verilog.do PAUSED at line 13
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.Digital_async_PLL_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.Digital_async_PLL_vlg_tst 
+# Start time: 11:21:04 on Oct 27,2021
+# Loading work.Digital_async_PLL_vlg_tst
+# Loading work.Digital_async_PLL
+# Loading work.adder2bit
+add wave -position insertpoint sim:/Digital_async_PLL_vlg_tst/*
+run
+# End time: 11:22:35 on Oct 27,2021, Elapsed time: 0:01:31
+# Errors: 1, Warnings: 0

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Oct 27 11:23:52 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Digital_async_PLL
+Top-level Entity Name : Digital_async_PLL
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 5 / 22,320 ( < 1 % )
+    Total combinational functions : 5 / 22,320 ( < 1 % )
+    Dedicated logic registers : 2 / 22,320 ( < 1 % )
+Total registers : 2
+Total pins : 4 / 154 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

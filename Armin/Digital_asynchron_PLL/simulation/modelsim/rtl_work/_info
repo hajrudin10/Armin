@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/simulation/modelsim
+vadder2bit
+Z1 !s110 1635326464
+!i10b 1
+!s100 3Um8mXa;AK^1G10l10zl>3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISKg9ablak:YTG>]>YbPhU1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635321861
+8C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v
+FC:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v
+!i122 1
+L0 1 17
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1635326463.000000
+!s107 C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL|C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/adder2bit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL}
+Z8 tCvgOpt 0
+vDigital_async_PLL
+!s110 1635326463
+!i10b 1
+!s100 B57Z^1If_IHf^BTHijRbi1
+R2
+Id5NE]fa=T<9T1=AcKIddA1
+R3
+R0
+w1635326379
+8C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v
+FC:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v
+!i122 0
+L0 20 73
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL|C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/Digital_async_PLL.v|
+!i113 1
+R6
+R7
+R8
+n@digital_async_@p@l@l
+vDigital_async_PLL_vlg_tst
+R1
+!i10b 1
+!s100 g^H=7KnBhoN:M?_M=Lfa32
+R2
+I<V69aNo]BihK<2<:WiSd;1
+R3
+R0
+w1635325550
+8C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v
+FC:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v
+!i122 2
+L0 29 39
+R4
+r1
+!s85 0
+31
+!s108 1635326464.000000
+!s107 C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL|C:/Users/Besic/OneDrive - TU Wien/Bachelorstudents/Armin/Digital_asynchron_PLL/PLL_tb.v|
+!i113 1
+R6
+R7
+R8
+n@digital_async_@p@l@l_vlg_tst
